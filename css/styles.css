@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #2d7a3a;
+  background: linear-gradient(180deg, #1b5e20 0%, #2d7a3a 45%, #357f42 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,6 +15,7 @@ body {
   flex-shrink: 0;
   min-height: 100vh;
   overflow: hidden;
+  opacity: 0.55;
 }
 
 .side-border img {
@@ -39,9 +40,9 @@ body {
 
 
 header {
-  background: #2e7d32;
+  background: #1b5e20;
   text-align: center;
-  padding: 14px 16px 10px;
+  padding: 14px 16px 16px;
 }
 
 .flower-decoration {
@@ -95,7 +96,8 @@ nav a {
   transition: opacity 0.2s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
   opacity: 1;
   text-decoration: underline;
 }
@@ -104,7 +106,7 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 10px;
   padding: 6px 12px;
   flex: 1;
 }
@@ -114,22 +116,50 @@ main {
   background: #f5f5f0;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+  border-top: 5px solid #8bc34a;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  cursor: pointer;
 }
 
 .block:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
   box-shadow: 0 8px 28px rgba(0,0,0,0.25);
 }
 
+.block--preguntas   { border-top-color: #29b6f6; }
+.block--sugerencias { border-top-color: #ffb300; }
+.block--multimedia  { border-top-color: #ab47bc; }
+
+.block h2 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
 .block-title {
-  font-size: 1.85rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.55rem;
   font-weight: 900;
   color: #111;
   text-align: center;
-  padding: 32px 20px;
-  user-select: none;
+  padding: 24px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.block-title:focus-visible {
+  outline: 3px solid #1b5e20;
+  outline-offset: -3px;
+}
+
+.block-icon {
+  font-size: 1.6rem;
+  line-height: 1;
 }
 
 
@@ -161,7 +191,7 @@ main {
 .faq-question {
   font-weight: 700;
   font-size: 0.92rem;
-  color: #2e7d32;
+  color: #1565c0;
   margin-bottom: 4px;
 }
 
@@ -193,7 +223,7 @@ main {
 .sug-title {
   font-weight: 700;
   font-size: 0.9rem;
-  color: #2e7d32;
+  color: #e65100;
 }
 
 .sug-desc {
@@ -204,6 +234,13 @@ main {
 }
 
 
+.gallery-caption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -212,11 +249,11 @@ main {
 }
 
 .gallery-item {
-  background: #dcedc8;
+  background: #f3e5f5;
   border-radius: 8px;
   aspect-ratio: 1;
   overflow: hidden;
-  border: 2px solid #8bc34a;
+  border: 2px solid #ab47bc;
   cursor: pointer;
   transition: opacity 0.2s;
 }
@@ -237,7 +274,7 @@ main {
 
 .stat-bar {
   background: #e8f5e9;
-  border-left: 4px solid #2e7d32;
+  border-left: 4px solid #29b6f6;
   padding: 10px 14px;
   border-radius: 4px;
   margin-bottom: 12px;
@@ -249,11 +286,16 @@ main {
   font-size: 1.3rem;
   color: #1b5e20;
   display: block;
+  margin-bottom: 4px;
+}
+
+.stat-bar p {
+  margin: 0;
 }
 
 
 footer {
-  background: #2e7d32;
+  background: #1b5e20;
   text-align: center;
   padding: 14px 16px;
   margin-top: 10px;
