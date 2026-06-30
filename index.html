@@ -1,72 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-  <title>Uso ineficiente del agua</title>
-  <link rel="stylesheet" href="css/styles.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso eficiente del agua desde la escuela</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  
   <div class="side-border">
-    <img src="assets/images/flores-costado.jpeg" alt="decoración lateral">
+    <img src="assets/images/flores-costado.jpeg" alt="">
   </div>
 
   <div class="page-card">
 
-    
     <header>
       <span class="flower-decoration">
-        <img src="assets/images/flor-titulo.jpeg" alt="decoración floral">
+        <img src="assets/images/flor-titulo.jpeg" alt="Decoración floral">
       </span>
       <h1>Eco Web</h1>
-      <p class="subtitle">USO EFICIENTE DEL AGUA DESDE LA ESCUELA</p>
+      <p class="subtitle">Uso eficiente del agua desde la escuela</p>
     </header>
 
-
-    <nav>
+    <nav aria-label="Secciones de la página">
       <a href="#preguntas">Preguntas</a>
       <a href="#sugerencias">Sugerencias</a>
       <a href="#multimedia">Multimedia</a>
     </nav>
 
-  
     <main>
 
-      
-      <section class="block" id="preguntas" onclick="toggleBlock('content-preguntas')">
-        <h2 class="block-title">¿ Preguntas ?</h2>
+      <section class="block block--preguntas" id="preguntas">
+        <h2>
+          <button type="button" class="block-title" aria-expanded="false" aria-controls="content-preguntas">
+            <span class="block-icon" aria-hidden="true">💧</span>
+            ¿ Preguntas ?
+          </button>
+        </h2>
         <div class="block-content" id="content-preguntas">
 
           <div class="stat-bar">
             <strong>Dato interesante</strong>
-            Una simple gotera que cae 10 veces por minuto puede desperdiciar hasta 3.000 litros
-            de agua al año, mientras que un inodoro con una fuga constante puede desperdiciar
-            miles de litros al día. Por eso, pequeñas acciones cotidianas en la escuela pueden generar un gran ahorro
+            <p>Una simple gotera que cae 10 veces por minuto puede desperdiciar hasta 3.000 litros
+              de agua al año, mientras que un inodoro con una fuga constante puede desperdiciar
+              miles de litros al día. Por eso, pequeñas acciones cotidianas en la escuela pueden
+              generar un gran ahorro.</p>
           </div>
 
           <article class="faq-item">
-            <h3 class="faq-question">¿Qué podemos hacer desde la escuela para usar el agua de forma más eficiente?"</h3>
-            <p class="faq-answer"> Podemos empezar por hábitos simples: cerrar bien las canillas después de usarlas, avisar enseguida si vemos una gotera o pérdida, y usar el agua necesaria sin desperdiciarla en los recreos o en el baño. También podemos proponer mejoras en la infraestructura, como canillas con temporizador, que ayudan a que el cuidado del agua no dependa solo de la buena voluntad de cada uno. </p>
+            <h3 class="faq-question">¿Qué podemos hacer desde la escuela para usar el agua de forma más eficiente?</h3>
+            <p class="faq-answer">Podemos empezar por hábitos simples: cerrar bien las canillas
+              después de usarlas, avisar enseguida si vemos una gotera o pérdida, y usar el agua
+              necesaria sin desperdiciarla en los recreos o en el baño. También podemos proponer
+              mejoras en la infraestructura, como canillas con temporizador, que ayudan a que el
+              cuidado del agua no dependa solo de la buena voluntad de cada uno.</p>
           </article>
 
           <article class="faq-item">
-            <h3 class="faq-question">¿Qué podemos hacer desde la escuela para usar el agua de forma más eficiente?"</h3>
-            <p class="faq-answer">A través de la concientización: charlas, carteles recordatorios cerca de las canillas, y el ejemplo de docentes y directivos. Si entre todos entendemos el valor del agua como recurso limitado, se vuelve más natural cerrar bien la canilla o reportar una pérdida en vez de ignorarla</p>
+            <h3 class="faq-question">¿Cómo puede la comunidad escolar generar el hábito de cuidar el agua?</h3>
+            <p class="faq-answer">A través de la concientización: charlas, carteles recordatorios
+              cerca de las canillas, y el ejemplo de docentes y directivos. Si entre todos
+              entendemos el valor del agua como recurso limitado, se vuelve más natural cerrar
+              bien la canilla o reportar una pérdida en vez de ignorarla.</p>
           </article>
 
           <article class="faq-item">
-            <h3 class="faq-question">La escuela puede proponer revisiones periódicas de cañerías y tanques, reemplazar artefactos viejos por otros más eficientes, e instalar canillas con pulsador o temporizador. Son cambios que no dependen de un solo alumno o docente, sino de un proyecto conjunto entre la comunidad educativa.</h3>
-            <p class="faq-answer"></p>
+            <h3 class="faq-question">¿Qué mejoras en las instalaciones puede impulsar la escuela?</h3>
+            <p class="faq-answer">La escuela puede proponer revisiones periódicas de cañerías y
+              tanques, reemplazar artefactos viejos por otros más eficientes, e instalar canillas
+              con pulsador o temporizador. Son cambios que no dependen de un solo alumno o
+              docente, sino de un proyecto conjunto entre la comunidad educativa.</p>
           </article>
 
         </div>
       </section>
 
-    
-      <section class="block" id="sugerencias" onclick="toggleBlock('content-sugerencias')">
-        <h3 class="block-title">Sugerencias</h3>
+      <section class="block block--sugerencias" id="sugerencias">
+        <h2>
+          <button type="button" class="block-title" aria-expanded="false" aria-controls="content-sugerencias">
+            <span class="block-icon" aria-hidden="true">💡</span>
+            Sugerencias
+          </button>
+        </h2>
         <div class="block-content" id="content-sugerencias">
 
           <div class="stat-bar">
@@ -74,53 +89,60 @@
           </div>
 
           <article class="sug-item">
-            <span class="sug-icon">🚰</span>
+            <span class="sug-icon" aria-hidden="true">🚰</span>
             <div>
-              <h2 class="sug-title">Buenas Prácticas</h2>
-              <p class="sug-desc">Fomentar entre todos el cierre responsable de las canillas y el compromiso de avisar rápido si vemos una pérdida, para colaborar con el cuidado del agua</p>
+              <h3 class="sug-title">Buenas prácticas</h3>
+              <p class="sug-desc">Fomentar entre todos el cierre responsable de las canillas y el
+                compromiso de avisar rápido si vemos una pérdida, para colaborar con el cuidado
+                del agua.</p>
             </div>
           </article>
 
           <article class="sug-item">
-            <span class="sug-icon">⏱️</span>
+            <span class="sug-icon" aria-hidden="true">⏱️</span>
             <div>
-              <h2 class="sug-title">Propuestas de mejoras en la instalación</h2>
+              <h3 class="sug-title">Propuestas de mejoras en la instalación</h3>
               <p class="sug-desc">Sugerir la instalación de canillas con temporizador (pulsadores)
                 que reducen la pérdida sin perder presión.</p>
             </div>
           </article>
 
           <article class="sug-item">
-            <span class="sug-icon">♻️</span>
+            <span class="sug-icon" aria-hidden="true">♻️</span>
             <div>
-              <h2 class="sug-title">Prácticas para reducir los residuos</h2>
-              <p class="sug-desc">Colocar cestos de basura en baños y filtros en los lavabos
-                para evitar el estancamiento de cañerías</p>
+              <h3 class="sug-title">Prácticas para reducir los residuos</h3>
+              <p class="sug-desc">Colocar cestos de basura en baños y filtros en los lavabos para
+                evitar el estancamiento de cañerías.</p>
             </div>
           </article>
 
         </div>
       </section>
 
-    
-      <section class="block" id="multimedia" onclick="toggleBlock('content-multimedia')">
-        <h3 class="block-title">Multimedia</h3>
+      <section class="block block--multimedia" id="multimedia">
+        <h2>
+          <button type="button" class="block-title" aria-expanded="false" aria-controls="content-multimedia">
+            <span class="block-icon" aria-hidden="true">📷</span>
+            Multimedia
+          </button>
+        </h2>
         <div class="block-content" id="content-multimedia">
 
-          <p style="font-size:0.85rem; color:#555; margin-bottom:12px; text-align:center;">
-            Imágenes sobre cosas que podrian ayudar a reducir el desperdicio de agua en la escuela
+          <p class="gallery-caption">
+            Imágenes de acciones y mejoras que la escuela puede aportar para usar el agua de
+            forma eficiente.
           </p>
 
           <div class="gallery">
-            <div class="gallery-item">
+            <figure class="gallery-item">
               <img src="assets/images/lavabo-con-filtro.jpeg" alt="Canilla con filtro">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/images/tacho-de-basura.jpeg" alt="300P">
-            </div>
-            <div class="gallery-item">
-              <img src="assets/images/canilla-con-temporizador.jpeg" alt="TEMPORIZADOR">
-            </div>
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/images/tacho-de-basura.jpeg" alt="Cesto de basura para evitar residuos en los desagües">
+            </figure>
+            <figure class="gallery-item">
+              <img src="assets/images/canilla-con-temporizador.jpeg" alt="Canilla con temporizador">
+            </figure>
           </div>
 
         </div>
@@ -128,25 +150,24 @@
 
     </main>
 
-  
     <footer>
-      <p class="members">
-        © 2026 grupo 7. Todos los derechos reservados. <br>
-      </p>
+      <p class="members">© 2026 Grupo 7. Todos los derechos reservados.</p>
     </footer>
 
   </div>
 
-
   <div class="side-border">
-    <img src="assets/images/flores-costado.jpeg" alt="decoración lateral">
+    <img src="assets/images/flores-costado.jpeg" alt="">
   </div>
 
   <script>
-    function toggleBlock(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle('open');
-    }
+    document.querySelectorAll('.block-title').forEach(function (button) {
+      button.addEventListener('click', function () {
+        var content = document.getElementById(button.getAttribute('aria-controls'));
+        var isOpen = content.classList.toggle('open');
+        button.setAttribute('aria-expanded', isOpen);
+      });
+    });
   </script>
 
 </body>
